@@ -1,0 +1,298 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Sajiya's Studio — Invitations Made With Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html{touch-action:manipulation;-webkit-text-size-adjust:100%}input,select,textarea{font-size:16px}
+*{-webkit-tap-highlight-color:transparent}a,button,[onclick],.btn,label,summary{outline:0;-webkit-touch-callout:none}a:focus,button:focus,[onclick]:focus{outline:0}
+:root{--c:#FBF6EC;--iv:#FFFDF8;--g:#B8975A;--b:#F3D9D6;--w:#4A1523}
+*{box-sizing:border-box}body{margin:0;background:var(--c);color:var(--w);font-family:'DM Sans',sans-serif}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500;margin:.3em 0}.el{font-family:'Cormorant Garamond',serif;font-style:italic}
+a{color:inherit;text-decoration:none}.gold{color:var(--g)}.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;background:#FBF6ECee;backdrop-filter:blur(8px);border-bottom:1px solid #4A152318;z-index:9}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;flex-wrap:wrap}
+nav a{margin-left:18px;font-size:14px}nav a:hover{color:var(--g)}
+.hero{text-align:center;padding:90px 20px;background:linear-gradient(var(--b),var(--c))}.hero h1{font-size:clamp(38px,8vw,72px)}.hero p{font-size:26px}
+.btn{display:inline-block;background:var(--w);color:var(--iv);border:0;border-radius:99px;padding:12px 28px;font:inherit;font-size:14px;cursor:pointer;transition:.3s;margin:6px}
+.btn:hover{background:var(--g)}.btn.l{background:none;color:var(--w);border:1px solid #4A152366}.btn.l:hover{background:var(--w);color:var(--iv)}
+h2.t{text-align:center;font-size:32px;margin:70px 0 24px}.chips{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.tile{background:var(--iv);border:1px solid #4A152315;border-radius:18px;overflow:hidden;transition:.4s;display:block}.tile:hover{box-shadow:0 14px 34px #4A152322}
+.im{aspect-ratio:4/5;background:#F3D9D655;display:grid;place-items:center;overflow:hidden}.im img{width:100%;height:100%;object-fit:cover;transition:.6s}.tile:hover img{transform:scale(1.05)}
+.tb{padding:16px}.tb small{color:var(--g);letter-spacing:.12em;text-transform:uppercase;font-size:11px}.tb p{font-size:13px;opacity:.7;margin:4px 0}.rt{font-size:12px}
+.box{background:var(--iv);border:1px solid #4A152315;border-radius:18px;padding:20px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;text-align:center}
+input,select,textarea{width:100%;background:var(--iv);border:1px solid #4A152326;border-radius:12px;padding:12px;font:inherit;margin:6px 0;outline:0}input:focus,select:focus,textarea:focus{border-color:var(--g)}
+.hp{display:none}.pick b{font-size:28px;cursor:pointer;color:var(--g);font-weight:400}.msg{font-size:13px;min-height:1em}.err{color:#b00}.ok{color:#265}
+.sk{aspect-ratio:4/6;border-radius:18px;background:#4A15231a;animation:p 1.2s infinite}@keyframes p{50%{opacity:.4}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px}@media(max-width:700px){.two{grid-template-columns:1fr}}
+.th{display:flex;gap:8px;margin-top:10px}.th img{width:60px;height:76px;object-fit:cover;border-radius:8px;cursor:pointer}
+footer{background:var(--w);color:#FFFDF8cc;text-align:center;padding:36px 20px;margin-top:80px;font-size:14px}
+.wa{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:99px;padding:14px 18px;box-shadow:0 6px 18px #0004;font-size:14px}
+main{animation:f .6s}@keyframes f{from{opacity:0;transform:translateY(12px)}}
+@media(max-width:700px){
+header .wrap{height:auto;padding:10px 16px;justify-content:center;text-align:center;gap:2px}
+header h3{font-size:20px}nav{width:100%}nav a{margin:0 8px;font-size:13px}
+.hero{padding:48px 16px}.hero p{font-size:20px}
+.btn{padding:10px 20px;font-size:13px}.chips .btn{padding:7px 13px;font-size:12.5px;margin:3px}
+h2.t{font-size:26px;margin:44px 0 18px}.grid{grid-template-columns:repeat(2,1fr);gap:12px}
+.tb{padding:12px}.tb h3{font-size:15px}.tb p{display:none}
+.wa{padding:13px;right:14px;bottom:14px}.wt{display:none}footer{padding-bottom:70px}}
+
+.logo{display:block;line-height:1.1}.logo h3{margin:0!important;font-size:24px;letter-spacing:.03em}.logo small{display:block;font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--g);margin-top:3px}
+nav a{position:relative;padding:8px 0;margin-left:28px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+nav a:after{content:"";position:absolute;left:0;bottom:2px;height:1px;width:0;background:var(--g);transition:.3s}nav a:hover:after,nav a.on:after{width:100%}nav a.on{color:var(--g)}
+h2.t:after{content:"";display:block;width:44px;height:2px;background:var(--g);margin:12px auto 0}
+.hero{background:radial-gradient(ellipse at 50% 0,#fff8,transparent 60%),linear-gradient(var(--b),var(--c))}
+.btn{box-shadow:0 4px 14px #4A152322}.btn.l{box-shadow:none}.tile{border-radius:20px}
+@media(max-width:700px){
+header .wrap{flex-direction:column;padding:12px 16px 0;gap:8px}
+.logo{text-align:center}.logo h3{font-size:22px}
+nav{display:flex;justify-content:space-around;align-self:stretch;margin:0 -16px;width:auto;border-top:1px solid #4A152314;padding:2px 0}
+nav a{margin:0;padding:11px 6px;font-size:11.5px;letter-spacing:.06em}nav a:after{bottom:6px;left:6px;right:6px;width:0}nav a:hover:after,nav a.on:after{width:calc(100% - 12px)}}
+
+html,body{overflow-x:hidden;max-width:100%}
+.msg{margin:4px 0 8px;min-height:0}.msg:empty{display:none}
+form .btn{margin:8px 0 0}
+
+footer{text-align:left;padding:56px 20px 0;margin-top:90px;background:var(--w)}
+.fw{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;padding-bottom:36px}
+footer h3{font-size:24px;color:#FFFDF8;margin:0 0 6px}footer .el{font-size:19px;margin:0;color:#FFFDF8b3}
+footer h4{font:500 11px 'DM Sans',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--g);margin:0 0 14px}
+footer a,footer span{display:block;color:#FFFDF8c8;font-size:14px;margin-bottom:9px;transition:.3s}footer a:hover{color:var(--g)}
+.fb{max-width:1100px;margin:auto;border-top:1px solid #FFFDF822;padding:18px 0 22px;font-size:12.5px;color:#FFFDF88c;text-align:center}.fb span{display:inline}
+@media(max-width:700px){footer{padding-top:40px}.fw{grid-template-columns:1fr 1fr;gap:28px}.fw>div:first-child{grid-column:1/-1;text-align:center}}
+
+.rf{padding:26px}.rf h3{font-size:24px;margin:0}.rf .sub{font-size:13px;opacity:.65;margin:4px 0 14px}
+.rf label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--g);margin-top:14px}.rf label .rl{color:var(--w);text-transform:none;letter-spacing:0;font-size:13px}
+.rf textarea{resize:none}.rf input:focus,.rf textarea:focus{box-shadow:0 0 0 3px #B8975A26}
+.pick{display:flex;gap:2px;margin:4px 0}.pick b{font-size:34px;line-height:1;padding:4px 5px;transition:transform .15s}.pick b:hover{transform:scale(1.15)}
+.cc{font-size:11px;opacity:.5;text-align:right}.rf .btn{width:100%;margin:12px 0 0;padding:14px}
+.rf .msg{font-size:13px;padding:10px 12px;border-radius:10px;background:#4A152308}.rf .msg.ok{background:#2651;color:#255}.rf .msg.err{background:#b001}
+
+.wi{width:18px;height:18px;flex:none;margin-right:8px;vertical-align:-4px}.btn{display:inline-flex;align-items:center;justify-content:center}
+footer a .wi{width:16px;height:16px;margin-right:6px;vertical-align:-3px}footer #fwa{display:inline-flex;align-items:center}
+
+textarea{resize:none!important;max-width:100%;display:block}input,select,textarea{max-width:100%}
+input[type=file]{padding:9px;font-size:13px}input[type=file]::file-selector-button{background:var(--w);color:var(--iv);border:0;border-radius:99px;padding:8px 16px;margin-right:10px;font:inherit;font-size:13px;cursor:pointer}
+#cf textarea{min-height:130px}
+
+.sl{font:500 11px 'DM Sans',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--g);margin:28px 0 10px}
+.desc{line-height:1.8;font-size:15.5px;margin:0;white-space:pre-line}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.opts li{display:flex;gap:12px;align-items:flex-start;background:var(--iv);border:1px solid #4A152314;border-radius:14px;padding:13px 16px;font-size:14.5px;line-height:1.5}
+.opts li svg{color:var(--g);flex:none;margin-top:3px}
+
+.cz{margin-top:56px;padding:34px 18px 30px;background:linear-gradient(var(--iv),#F3D9D644);border:1px solid #4A152314;border-radius:24px;text-align:center}
+.cz h2.t{margin:4px 0 22px}
+.opts2{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;text-align:left;margin-bottom:24px}
+.op{display:flex;gap:14px;align-items:flex-start;background:var(--iv);border:1px solid #4A152314;border-radius:16px;padding:16px}
+.op b{font:500 22px 'Playfair Display',serif;color:var(--g);line-height:1}.op span{font-size:14.5px;line-height:1.55}
+
+.rc{background:var(--iv);border:1px solid #4A152314;border-radius:20px;padding:20px;margin-bottom:12px;box-shadow:0 2px 12px #4A15230a}.grid .rc{margin-bottom:0}
+.rh{display:flex;align-items:center;gap:12px}.av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#B8975A,#DCC38F);color:#fff;display:grid;place-items:center;font:500 17px 'Playfair Display',serif;flex:none}
+.rh b{display:block;font-size:15px}.rh small{opacity:.55;font-size:12px}.rh .gold{margin-left:auto;font-size:14px;letter-spacing:1px;white-space:nowrap}
+.rc p{margin:14px 0 0;line-height:1.65;font-size:15px}.rc p:before{content:"“";font:44px/0 'Playfair Display',serif;color:#B8975A66;vertical-align:-16px;margin-right:6px}
+
+.rh .nm .gold{display:block;margin:4px 0 0;font-size:14px}.rh .dt{margin-left:auto;white-space:nowrap;align-self:flex-start;margin-top:4px}
+.rc p:before{content:none!important}.op b{min-width:30px}
+
+.chip{display:inline-block;background:#B8975A22;color:#8a6d36;border-radius:99px;padding:6px 15px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.pt{font-size:clamp(30px,7vw,44px);line-height:1.15;margin:14px 0 12px}
+.pr{display:flex;align-items:center;gap:8px;font-size:14px;padding-bottom:20px;border-bottom:1px solid #4A152314}.pr .gold{font-size:17px;letter-spacing:1px}.pr b{font-weight:500}.pr span:not(.gold){opacity:.6}
+.cta{display:flex;width:100%;margin:28px 0 0;padding:16px;font-size:15px}
+
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--iv);border:1px solid #B8975A77;color:#8a6d36;padding:7px 14px 7px 12px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-radius:99px;transition:.3s}
+.chip i{width:6px;height:6px;border-radius:50%;background:var(--g);flex:none}.chip em{font-style:normal;font-size:16px;line-height:1;transition:.3s}
+.chip:hover{background:var(--w);color:var(--iv);border-color:var(--w)}.chip:hover em{transform:translateX(3px)}
+
+.chip{display:inline-block;background:#B8975A1c;border:0;color:#7a5f2c;padding:6px 14px;font-size:13px;letter-spacing:.02em;text-transform:none;border-radius:8px;font-weight:500}
+.chip:hover{background:var(--g);color:#fff}
+
+#czm{position:fixed;inset:0;background:#4A152399;z-index:100;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--c);width:100%;max-width:520px;max-height:92vh;overflow:auto;border-radius:24px 24px 0 0;padding:26px 22px 30px;position:relative;animation:f .3s}
+.sheet .x{position:absolute;right:16px;top:16px;border:0;background:#4A152312;width:34px;height:34px;border-radius:50%;cursor:pointer;color:var(--w)}
+.sheet label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--g);margin:16px 0 4px}.chs{display:grid;gap:8px}
+.sheet label.ck{display:flex;gap:12px;align-items:center;background:var(--iv);border:1px solid #4A152318;border-radius:12px;padding:12px 14px;text-transform:none;letter-spacing:0;font-size:14.5px;color:var(--w);margin:0;cursor:pointer}
+.ck input{width:18px;height:18px;margin:0;padding:0;border:0;flex:none;accent-color:#B8975A}.sheet textarea{resize:none}.sheet .btn{width:100%;margin:16px 0 0;padding:14px}
+@media(min-width:700px){#czm{align-items:center}.sheet{border-radius:24px}}
+
+.im.big{aspect-ratio:auto;min-height:220px;cursor:zoom-in;position:relative}
+.im.big img{width:100%;height:auto;max-height:78vh;object-fit:contain;display:block}.im.big:hover img{transform:none}
+.im.big:after{content:"Tap to zoom";position:absolute;right:10px;bottom:10px;background:#4A1523cc;color:#fff;font-size:11px;padding:5px 12px;border-radius:99px}
+.th img{border:2px solid transparent;transition:.2s}.th img.on{border-color:var(--g)}
+#lbx{position:fixed;inset:0;background:#120508f2;z-index:200;display:flex;flex-direction:column}
+.lbt{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;color:#fff;font-size:14px}
+.lbt button{background:#ffffff26;color:#fff;border:0;width:40px;height:40px;border-radius:50%;font-size:20px;margin-left:8px;cursor:pointer}
+.lbs{flex:1;overflow:auto;display:flex;min-height:0;-webkit-overflow-scrolling:touch}.lbs img{margin:auto;display:block;cursor:zoom-in}
+.lp,.ln{position:fixed;top:50%;transform:translateY(-50%);background:#ffffff30;color:#fff;border:0;width:42px;height:42px;border-radius:50%;font-size:26px;z-index:2;cursor:pointer}.lp{left:10px}.ln{right:10px}
+
+#lbx{background:#0b0306!important;opacity:1}
+.lbs{background:#0b0306;align-items:center}
+
+#lbx{height:100%;overscroll-behavior:contain;touch-action:none}
+.lbs{overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom;align-items:flex-start!important}
+.lbs img{margin:0!important;object-fit:contain}
+
+.lbs{touch-action:none!important;overflow:hidden!important;align-items:stretch!important}
+.lbs img{width:100%;height:100%;object-fit:contain;transform-origin:center;user-select:none;-webkit-user-drag:none;will-change:transform;cursor:grab;margin:0!important}
+.lbh{position:fixed;bottom:18px;left:0;right:0;text-align:center;color:#ffffff99;font-size:12px;pointer-events:none}
+
+.im.big{aspect-ratio:652/675;min-height:0;background:#F3D9D655}
+.im.big img{width:100%;height:100%;max-height:none;object-fit:contain}
+.th img{object-fit:contain;background:#F3D9D655}
+
+.im.big{overflow:hidden}
+.bgb{position:absolute;inset:-24px;background-size:cover;background-position:center;filter:blur(26px) saturate(1.1);opacity:.6;transform:scale(1.1)}
+.im.big img{position:relative;z-index:1}.im.big:after{z-index:2}
+
+.im.big{aspect-ratio:auto!important;min-height:0;display:block}
+.im.big img{width:100%;height:auto;max-height:min(78vh,calc((100vw - 40px)*1.035));object-fit:contain;display:block}
+
+.im.big{aspect-ratio:652/675!important;display:block;position:relative}
+.im.big img{width:100%;height:100%;max-height:none;object-fit:contain;display:block}
+
+.im.big{touch-action:pan-y;user-select:none}
+.dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:6px;z-index:2;pointer-events:none}
+.dots i{width:7px;height:7px;border-radius:99px;background:#ffffffaa;box-shadow:0 1px 4px #0006;transition:.25s}.dots i.on{width:22px;background:#fff}
+@keyframes swr{from{opacity:.25;transform:translateX(28px)}}@keyframes swl{from{opacity:.25;transform:translateX(-28px)}}
+.im.big img.swr{animation:swr .28s ease}.im.big img.swl{animation:swl .28s ease}
+
+.sl{margin:26px 0 10px!important}
+.dbox{border-left:2px solid #B8975A66;padding-left:14px}
+.desc{font-size:14.5px!important;line-height:1.85!important;color:#4A1523dd;letter-spacing:.005em;text-align:left;text-wrap:pretty;word-break:break-word}
+.desc.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.more{background:none;border:0;color:var(--g);font:500 13px 'DM Sans',sans-serif;padding:8px 0 0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+.desc{text-align:justify!important;text-align-last:center;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+
+.desc{text-align:justify!important;text-align-last:left!important;hyphens:none!important;-webkit-hyphens:none!important;word-break:normal!important;overflow-wrap:break-word}
+
+.th{flex-wrap:wrap}.ti{position:relative}.ti img{width:84px;height:84px;object-fit:cover;border-radius:12px;display:block}
+.ti button{position:absolute;top:-7px;right:-7px;width:28px;height:28px;border-radius:50%;border:2px solid var(--iv);background:var(--w);color:#fff;font-size:12px;cursor:pointer;touch-action:manipulation}
+label.ad{width:84px;height:84px;border:2px dashed #B8975A99;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--g);font-size:30px;line-height:1;cursor:pointer;margin:0}
+label.ad small{font-size:11px;margin-top:4px}label.ad:hover{background:#B8975A18}
+</style></head><body>
+<header><div class="wrap"><a href="#/" class="logo"><h3 id="bn"></h3><small>Custom Invitations</small></a><nav><a href="#/">Home</a><a href="#/collection">Collection</a><a href="#/custom">Custom Card</a><a href="#/contact">Contact</a></nav></div></header>
+<main id="app"></main>
+<footer><div class="fw"><div><h3 id="fn"></h3><p class="el" id="ft"></p></div><div><h4>Explore</h4><a href="#/">Home</a><a href="#/collection">Collection</a><a href="#/custom">Custom Card</a><a href="#/contact">Contact</a></div><div><h4>Get in touch</h4><a id="fwa" target="_blank" rel="noreferrer">Chat on WhatsApp</a><div id="fx"></div></div></div><div class="fb">© <span id="yr"></span> <span id="fn2"></span>. All rights reserved.</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.0/dist/umd/supabase.min.js"></script>
+<script>
+const sb=supabase.createClient('https://cmzneepcupwrphqihord.supabase.co','sb_publishable_Y_KvjbPcXbgcuwUa-SqKAA_FH4qhMlA');
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let S={brand_name:"Sajiya's Studio",tagline:'Invitations Made With Love',whatsapp_number:'918828302899'};
+const WAI=`<svg class="wi" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+const CHK='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>';
+let SWT=0,SW=null,RF=[];
+async function cmp(f){try{const b=await createImageBitmap(f),k=Math.min(1,1600/Math.max(b.width,b.height)),c=document.createElement('canvas');c.width=Math.round(b.width*k);c.height=Math.round(b.height*k);c.getContext('2d').drawImage(b,0,0,c.width,c.height);const o=await new Promise(r=>c.toBlob(r,'image/webp',.82));if(o)return new File([o],'ref.webp',{type:'image/webp'})}catch(e){}return f}
+function drawR(){$('#rp').innerHTML=RF.map((f,i)=>`<div class="ti"><img src="${f._u||(f._u=URL.createObjectURL(f))}"><button type="button" onclick="rmR(${i})">✕</button></div>`).join('')+(RF.length<5?'<label class="ad" for="rf">+<small>Add photos</small></label>':'')}
+function rmR(i){RF.splice(i,1);drawR()}
+async function addR(inp){const m=document.querySelector('#cf .msg'),say=t=>{m.textContent=t;m.className='msg err'};m.textContent='';
+ for(const f of [...inp.files]){if(RF.length>=5){say('You can add up to 5 photos.');break}if(!f.type.startsWith('image/')){say('Only photos can be added.');continue}
+  const g=await cmp(f);if(!['image/jpeg','image/png','image/webp'].includes(g.type)||g.size>2097152){say('A photo was skipped (use JPG, PNG or WebP under 2 MB).');continue}RF.push(g)}
+ inp.value='';drawR()}
+function tgD(b){const p=b.previousElementSibling;p.classList.toggle('clamp');b.textContent=p.classList.contains('clamp')?'Read more':'Show less'}
+function setImg(k,dir){const im=CARD.d.images||[],n=im.length;if(!n)return;BI=(k+n)%n;const u=im[BI],i=document.getElementById('big');if(!i)return;
+ i.src=u;document.getElementById('bgb').style.backgroundImage='url("'+u+'")';
+ i.classList.remove('swl','swr');void i.offsetWidth;if(dir)i.classList.add(dir>0?'swr':'swl');
+ document.querySelectorAll('.th img').forEach((x,j)=>x.classList.toggle('on',j===BI));document.querySelectorAll('.dots i').forEach((x,j)=>x.classList.toggle('on',j===BI))}
+document.addEventListener('pointerdown',e=>{const b=e.target.closest('.im.big');SW=b?{x:e.clientX,y:e.clientY}:null});
+document.addEventListener('pointerup',e=>{if(!SW)return;const dx=e.clientX-SW.x,dy=e.clientY-SW.y;SW=null;
+ if(CARD&&(CARD.d.images||[]).length>1&&Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3){SWT=Date.now();setImg(BI+(dx<0?1:-1),dx<0?1:-1)}});
+let CARD=null,BI=0,LB={i:0,z:1,imgs:[]};
+function lb(i){LB={i,z:1,imgs:CARD.d.images||[]};drawLb()}
+function drawLb(){let m=document.getElementById('lbx');if(!m){m=document.createElement('div');m.id='lbx';document.body.appendChild(m);LB.sy=window.scrollY;document.body.style.cssText+=';position:fixed;top:-'+LB.sy+'px;left:0;right:0;width:100%'}
+ const n=LB.imgs.length;m.innerHTML=`<div class="lbt"><span>${LB.i+1} / ${n}</span><button onclick="lc()">✕</button></div>${n>1?'<button class="lp" onclick="ln(-1)">‹</button><button class="ln" onclick="ln(1)">›</button>':''}<div class="lbs"><img id="lbi" draggable="false" src="${esc(LB.imgs[LB.i])}"></div><div class="lbh">Pinch or double-tap to zoom</div>`;bindG()}
+let G={};
+const lbE=()=>document.querySelector('.lbs'),imE=()=>document.getElementById('lbi');
+function clampG(){const b=lbE(),i=imE();if(!b||!i)return;const W=b.clientWidth,H=b.clientHeight,nw=i.naturalWidth||W,nh=i.naturalHeight||H,k=Math.min(W/nw,H/nh),mx=Math.max(0,(nw*k*G.s-W)/2),my=Math.max(0,(nh*k*G.s-H)/2);G.x=Math.min(mx,Math.max(-mx,G.x));G.y=Math.min(my,Math.max(-my,G.y))}
+function applyG(){const i=imE();if(!i)return;clampG();i.style.transform=`translate(${G.x}px,${G.y}px) scale(${G.s})`}
+function zoomAt(ns,px,py){const r=lbE().getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;ns=Math.min(5,Math.max(1,ns));const k=ns/G.s;G.x=px-cx-k*(px-cx-G.x);G.y=py-cy-k*(py-cy-G.y);G.s=ns;if(ns===1)G.x=G.y=0;applyG()}
+function bindG(){const b=lbE();G={s:1,x:0,y:0,p:new Map(),pd:1,ps:1,lt:0,sx:0,sy:0,mv:0};
+ b.onpointerdown=e=>{try{b.setPointerCapture(e.pointerId)}catch(_){}G.p.set(e.pointerId,{x:e.clientX,y:e.clientY});if(G.p.size===1){G.sx=e.clientX;G.sy=e.clientY;G.mv=0}if(G.p.size===2){const [a,c]=[...G.p.values()];G.pd=Math.hypot(a.x-c.x,a.y-c.y)||1;G.ps=G.s}};
+ b.onpointermove=e=>{const o=G.p.get(e.pointerId);if(!o)return;const nx=e.clientX,ny=e.clientY;G.p.set(e.pointerId,{x:nx,y:ny});
+  if(G.p.size===2){const [a,c]=[...G.p.values()],d=Math.hypot(a.x-c.x,a.y-c.y);zoomAt(G.ps*d/G.pd,(a.x+c.x)/2,(a.y+c.y)/2);G.mv=9999;return}
+  const dx=nx-o.x,dy=ny-o.y;G.mv+=Math.abs(dx)+Math.abs(dy);if(G.s>1){G.x+=dx;G.y+=dy;applyG()}};
+ b.onpointerup=b.onpointercancel=e=>{const had=G.p.has(e.pointerId);G.p.delete(e.pointerId);if(!had||G.p.size)return;
+  const dx=e.clientX-G.sx,dy=e.clientY-G.sy;
+  if(G.mv<10){const t=Date.now();if(t-G.lt<320){zoomAt(G.s>1?1:2.5,e.clientX,e.clientY);G.lt=0}else G.lt=t;return}
+  if(G.s===1&&G.mv<5000){if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)&&LB.imgs.length>1)ln(dx<0?1:-1);else if(dy>110)lc()}};
+ b.onwheel=e=>{e.preventDefault();zoomAt(G.s*(e.deltaY<0?1.2:1/1.2),e.clientX,e.clientY)}}
+function ln(d){const n=LB.imgs.length;LB.i=(LB.i+d+n)%n;drawLb()}
+function lc(){const m=document.getElementById('lbx');if(!m)return;m.remove();const y=LB.sy||0;document.body.style.position='';document.body.style.top='';document.body.style.left='';document.body.style.right='';document.body.style.width='';window.scrollTo(0,y);if(CARD&&(LB.imgs||[]).length&&document.getElementById('big'))setImg(LB.i)}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lc()});
+function openCz(){const d=CARD.d,co=CARD.co,m=document.createElement('div');m.id='czm';
+ m.innerHTML=`<div class="sheet"><button class="x" type="button" onclick="document.getElementById('czm').remove()">✕</button><p class="el gold" style="margin:0;font-size:19px">Customize this card</p><h3 style="font-size:24px;margin:2px 36px 8px 0">${esc(d.title)}</h3><form id="zf">${co.length?`<label>What would you like to customize?</label><div class="chs">${co.map(x=>`<label class="ck"><input type="checkbox" name="o" value="${esc(x)}"><span>${esc(x)}</span></label>`).join('')}</div>`:''}<label>Your details</label><textarea name="t" rows="4" maxlength="1500" placeholder="e.g. Names, date, venue, timing…"></textarea><label>Your price / budget (₹)</label><input name="b" inputmode="decimal" placeholder="e.g. ₹3,000"><p class="msg"></p><button class="btn">${WAI}Send on WhatsApp</button></form></div>`;
+ document.body.appendChild(m);m.addEventListener('click',e=>{if(e.target===m)m.remove()})}
+const wl=(t)=>`https://wa.me/${String(S.whatsapp_number).replace(/\D/g,'')}?text=${encodeURIComponent(t)}`;
+const avg=r=>r.length?r.reduce((a,b)=>a+b.rating,0)/r.length:0,st=v=>`<span class="gold">${'★'.repeat(Math.round(v))}${'☆'.repeat(5-Math.round(v))}</span>`;
+const sk=n=>Array(n).fill('<div class="sk"></div>').join('');
+const tile=c=>{const r=c.card_reviews||[],a=avg(r);return `<a class="tile" href="#/card/${c.id}"><div class="im">${c.images?.[0]?`<img loading="lazy" src="${esc(c.images[0])}" alt="${esc(c.title)}">`:'<span class="el">Image coming soon</span>'}</div><div class="tb"><small>${esc(c.categories?.name||'Invitation')}</small><h3>${esc(c.title)}</h3><p>${esc((c.description||'').slice(0,90))}</p><div class="rt">${st(a)} ${r.length?a.toFixed(1)+' ('+r.length+')':'No reviews'} · <u>View Details</u></div></div></a>`};
+const rform=(t,id)=>`<form class="box rf" data-t="${t}" data-c="${id||''}"><h3>Write a review</h3><p class="sub">Your honest feedback helps other customers.</p><label>Your name</label><input name="n" placeholder="e.g. Priya Sharma" maxlength="60"><label>Your rating</label><div class="pick">${[1,2,3,4,5].map(n=>`<b data-n="${n}">☆</b>`).join('')}</div><input type="hidden" name="r"><label>Your experience</label><textarea name="m" rows="4" maxlength="1000" placeholder="Tell us what you loved about the design and service"></textarea><div class="cc">0 / 1000</div><input name="site" class="hp" tabindex="-1" autocomplete="off"><p class="msg"></p><button class="btn">Submit Review</button></form>`;
+const ini=n=>n.trim().split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+const dt=d=>new Date(d).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+const rcard=x=>`<div class="rc"><div class="rh"><div class="av">${esc(ini(x.reviewer_name))}</div><div class="nm"><b>${esc(x.reviewer_name)}</b>${st(x.rating)}</div><small class="dt">${dt(x.created_at)}</small></div><p>${esc(x.comment)}</p></div>`;
+const revList=r=>r.map(rcard).join('');
+function setS(){$('#bn').textContent=$('#fn').textContent=S.brand_name;$('#ft').textContent=S.tagline;$('#yr').textContent=new Date().getFullYear();$('#fn2').textContent=S.brand_name;$('#fwa').href=wl(`Hello ${S.brand_name}!`);$('#fwa').innerHTML=WAI+'Chat on WhatsApp';$('#fx').innerHTML=[S.location,S.email,S.phone].filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join('')+(S.instagram_url?`<a target="_blank" rel="noreferrer" href="${esc(S.instagram_url)}">Instagram</a>`:'');document.title=S.brand_name}
+const P={
+async home(_,stale=()=>false){
+ app.innerHTML=`<section class="hero"><p class="el gold" style="font-size:22px">Wedding & Birthday Invitations</p><h1>${esc(S.brand_name)}</h1><p class="el">${esc(S.tagline)}</p><a class="btn" href="#/collection">Explore Collection</a><a class="btn l" href="#/custom">Create Your Own Card</a></section><div class="wrap"><h2 class="t">Shop by Category</h2><div class="chips" id="cc"></div><h2 class="t">Featured Designs</h2><div class="grid" id="ft2">${sk(4)}</div><h2 class="t">Why Choose Us</h2><div class="why"><div class="box"><h3>Bespoke Designs</h3><p>Every card crafted around your story.</p></div><div class="box"><h3>Made With Love</h3><p>Personal attention from idea to print.</p></div><div class="box"><h3>Premium Finish</h3><p>Elegant papers, foils and detailing.</p></div><div class="box"><h3>Delivered in India</h3><p>Shipped to your doorstep.</p></div></div><h2 class="t">Loved by Our Customers</h2><div id="bv"></div><div style="max-width:520px;margin:24px auto">${rform('brand_reviews')}</div></div>`;
+ const [c,f,b]=await Promise.all([sb.from('categories').select('*').order('sort_order'),sb.from('cards').select('*,categories(name),card_reviews(rating)').eq('published',true).eq('featured',true).order('created_at',{ascending:false}).limit(4),sb.from('brand_reviews').select('*').eq('status','approved').order('created_at',{ascending:false}).limit(6)]);
+ if(stale())return;
+ $('#cc').innerHTML=(c.data||[]).map(x=>`<a class="btn l" href="#/collection/${x.slug}">${esc(x.name)}</a>`).join('');
+ $('#ft2').innerHTML=f.data?.length?f.data.map(tile).join(''):'<p class="el" style="grid-column:1/-1;text-align:center;font-size:20px">New designs are being added soon.</p>';
+ $('#bv').innerHTML=b.data?.length?`<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">${b.data.map(rcard).join('')}</div>`:'<p style="text-align:center;opacity:.6">Be the first to share your experience.</p>'},
+async collection(slug='all',stale=()=>false){
+ app.innerHTML=`<div class="wrap"><h2 class="t" style="font-size:42px">Our Collection</h2><div class="chips" id="cc"></div><div class="grid" id="cg" style="margin-top:26px">${sk(8)}</div></div>`;
+ const [c,d]=await Promise.all([sb.from('categories').select('*').order('sort_order'),sb.from('cards').select('*,categories(name,slug),card_reviews(rating)').eq('published',true).order('created_at',{ascending:false})]);
+ if(stale())return;
+ $('#cc').innerHTML=[{slug:'all',name:'All'},...(c.data||[])].map(x=>`<a class="btn ${x.slug===slug?'':'l'}" href="#/collection/${x.slug}">${esc(x.name)}</a>`).join('');
+ if(d.error)return $('#cg').innerHTML='<p class="err">Could not load cards.</p>';
+ const l=d.data.filter(x=>slug==='all'||x.categories?.slug===slug);
+ $('#cg').innerHTML=l.length?l.map(tile).join(''):'<p class="el" style="grid-column:1/-1;text-align:center;font-size:22px">No designs in this category yet.</p>'},
+async card(id,stale=()=>false){
+ app.innerHTML='<div class="wrap" style="padding-top:40px"><div class="sk" style="max-width:380px"></div></div>';
+ const [c,r]=await Promise.all([sb.from('cards').select('*,categories(name,slug)').eq('id',id).eq('published',true).maybeSingle(),sb.from('card_reviews').select('*').eq('card_id',id).eq('status','approved').order('created_at',{ascending:false})]);
+ if(stale())return;
+ if(!c.data)return app.innerHTML='<div class="wrap" style="text-align:center;padding:80px 0"><p class="el" style="font-size:24px">This design isn’t available.</p><a class="btn" href="#/collection">Back to Collection</a></div>';
+ const d=c.data,rv=r.data||[],a=avg(rv),im=d.images||[],co=(d.customization||'').split('\n').map(x=>x.trim()).filter(Boolean);CARD={d,co};BI=0;
+ app.innerHTML=`<div class="wrap" style="padding-top:40px"><div class="two"><div><div class="im big" style="border-radius:18px" ${im[0]?'onclick="Date.now()-SWT>450&&lb(BI)"':''}>${im[0]?`<div class="bgb" id="bgb" style="background-image:url('${esc(im[0])}')"></div><img id="big" src="${esc(im[0])}" alt="${esc(d.title)}">`:''}${im.length>1?`<div class="dots">${im.map((_,k)=>`<i class="${k?'':'on'}"></i>`).join('')}</div>`:''}</div>${im.length>1?`<div class="th">${im.map((u,k)=>`<img src="${esc(u)}" class="${k?'':'on'}" onclick="setImg(${k})">`).join('')}</div>`:''}</div><div>${d.categories?.name?`<a class="chip" href="#/collection/${esc(d.categories.slug||'all')}">${esc(d.categories.name)}</a>`:''}<h1 class="pt">${esc(d.title)}</h1><div class="pr">${st(a)}${rv.length?`<b>${a.toFixed(1)}</b><span>· ${rv.length} review${rv.length>1?'s':''}</span>`:'<span>No reviews yet</span>'}</div>${d.description&&d.description.trim()?`<h4 class="sl">Description</h4><div class="dbox"><p class="desc${d.description.length>180?' clamp':''}">${esc(d.description.trim())}</p>${d.description.length>180?'<button class="more" type="button" onclick="tgD(this)">Read more</button>':''}</div>`:''}<a class="btn cta" target="_blank" href="${wl(`Hello ${S.brand_name}!\n\nI'm interested in the card "${d.title}". Please share details and price.`)}">${WAI}Enquire on WhatsApp</a><button class="btn l cta" type="button" style="margin-top:12px" onclick="openCz()">Customize this card</button></div></div>${co.length?`<section class="cz"><p class="el gold" style="font-size:20px;margin:0">Make it yours</p><h2 class="t">Customization Options</h2><div class="opts2">${co.map((x,i)=>`<div class="op"><b>${String(i+1).padStart(2,'0')}</b><span>${esc(x)}</span></div>`).join('')}</div><button class="btn" type="button" onclick="openCz()">Customize this card</button></section>`:''}<h2 class="t" style="text-align:left">Customer Reviews</h2><div class="two"><div>${rv.length?revList(rv):'<p class="el" style="font-size:22px;opacity:.7">No reviews yet. Be the first!</p>'}</div>${rform('card_reviews',d.id)}</div></div>`},
+custom(){RF=[];
+ const o=['Wedding','Birthday','Engagement','Anniversary','Other'].map(x=>`<option>${x}</option>`).join('');
+ app.innerHTML=`<div class="wrap" style="max-width:640px;padding-top:50px"><h1 style="text-align:center;font-size:40px">Let's Create Something Special</h1><p class="el" style="text-align:center;font-size:22px">Tell us your dream invitation and we'll bring it to life.</p><form id="cf" class="box" style="margin-top:26px"><p class="el" style="text-align:center;margin:0 0 8px;font-size:19px;opacity:.7">All fields are optional</p><input name="name" placeholder="Your Name" maxlength="80"><select name="occasion"><option value="">Occasion (optional)</option>${o}</select><input name="card_for" placeholder="Who is the card for?"><input name="card_type" placeholder="What kind of card do you want?"><textarea name="idea" rows="4" maxlength="3000" placeholder="Describe your creative idea"></textarea><input name="theme" placeholder="Preferred colours and theme"><input name="quantity" placeholder="Estimated quantity"><h3>What's your estimated budget?</h3><input name="budget" placeholder="Optional, e.g. ₹5,000"><label style="font-size:14px">Reference photos (optional, up to 5)</label><div class="th" id="rp"><label class="ad" for="rf">+<small>Add photos</small></label></div><input type="file" id="rf" accept="image/*" multiple hidden onchange="addR(this)"><input name="site" class="hp" tabindex="-1" autocomplete="off"><p class="msg"></p><button class="btn" style="width:100%">${WAI}Send on WhatsApp</button></form></div>`},
+contact(){
+ app.innerHTML=`<div class="wrap" style="max-width:560px;text-align:center;padding:60px 0"><h1 style="font-size:40px">Get in Touch</h1><p class="el" style="font-size:22px">${esc(S.brand_name)} — ${esc(S.tagline)}</p><a class="btn" target="_blank" href="${wl('Hello '+S.brand_name+'!')}">${WAI}Chat on WhatsApp</a><div style="margin-top:30px;line-height:2">${S.location?'📍 '+esc(S.location)+'<br>':''}${S.email?'✉️ '+esc(S.email)+'<br>':''}${S.phone?'📞 '+esc(S.phone)+'<br>':''}${S.instagram_url?`<a class="gold" target="_blank" href="${esc(S.instagram_url)}">Instagram</a>`:''}</div></div>`}};
+const app=$('#app');
+let RID=0;
+async function route(keep){const my=++RID,[,p,a]=(location.hash||'#/').split('/');lc();if(keep!==true)window.scrollTo(0,0);
+ document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.getAttribute('href')==='#/'+((p==='card'?'collection':p)||'')));
+ try{await(P[p||'home']||P.home)(a,()=>my!==RID)}catch(e){console.error(e);if(my===RID)app.innerHTML='<div style="text-align:center;padding:70px 20px"><p class="el" style="font-size:22px">Something went wrong.</p><button class="btn" onclick="route()">Try again</button></div>'}}
+const RL=['','Poor','Fair','Good','Very good','Excellent'];
+const paint=(f,n)=>{f.querySelectorAll('.pick b').forEach(x=>x.textContent=+x.dataset.n<=n?'★':'☆')};
+document.addEventListener('click',e=>{const b=e.target.closest('.pick b');if(!b)return;const f=b.closest('form'),n=+b.dataset.n;f.r.value=n;paint(f,n)});
+document.addEventListener('mouseover',e=>{const b=e.target.closest('.pick b');if(b)paint(b.closest('form'),+b.dataset.n)});
+document.addEventListener('mouseout',e=>{const k=e.target.closest('.pick');if(k){const f=k.closest('form');paint(f,+f.r.value||0)}});
+document.addEventListener('input',e=>{if(e.target.name==='m'){const f=e.target.closest('form');f.querySelector('.cc').textContent=e.target.value.length+' / 1000'}});
+document.addEventListener('submit',async e=>{const f=e.target,m=f.querySelector('.msg'),say=(t,ok)=>{m.textContent=t;m.className='msg '+(ok?'ok':'err')};
+ if(f.matches('.rf')){e.preventDefault();if(f.site.value)return say('Thank you!',1);const n=f.n.value.trim(),r=+f.r.value,c=f.m.value.trim();
+  if(n.length<2)return say('Please enter your name.');if(!r)return say('Please select a star rating.');if(c.length<5)return say('Please write a few words.');
+  if(Date.now()-(+localStorage.rv||0)<60000)return say('Please wait a minute before another review.');
+  const row={reviewer_name:n,rating:r,comment:c,status:'approved'};if(f.dataset.c)row.card_id=f.dataset.c;
+  const {error}=await sb.from(f.dataset.t).insert(row);if(error)return say('Could not submit. Try again.');localStorage.rv=Date.now();f.reset();f.r.value='';paint(f,0);f.querySelector('.cc').textContent='0 / 1000';say('Thank you! Your review has been posted.',1);setTimeout(()=>route(true),1300)}
+ if(f.id==='cf'){e.preventDefault();if(f.site.value)return;const v=Object.fromEntries(new FormData(f));
+  say('Saving…',1);const res=(await Promise.all(RF.map(async g=>{const p=crypto.randomUUID()+'.'+g.type.split('/')[1],u=await sb.storage.from('reference-images').upload(p,g);return u.error?null:{p,url:sb.storage.from('reference-images').getPublicUrl(p).data.publicUrl}}))).filter(Boolean),refs=res.map(r=>r.p),refUrls=res.map(r=>r.url);if(RF.length&&refs.length<RF.length)say('Some photos could not be uploaded, sending the rest…',1)
+  const {site,file:_,...row}=v;const {error}=await sb.from('enquiries').insert({...row,name:v.name.trim()||'Not provided',occasion:v.occasion||'Not specified',reference_image:refs.join(',')||null,status:'pending'});
+  const L=[['Name',v.name],['Occasion',v.occasion],['Card For',v.card_for],['Card Type',v.card_type],['Card Idea',v.idea],['Theme',v.theme],['Quantity',v.quantity],['Estimated Budget',v.budget]].filter(([,x])=>x&&x.trim()).map(([k,x])=>`${k}: ${x.trim()}`).join('\n');
+  const B=[L,...refUrls.map((u,i)=>'Reference Image '+(i+1)+': '+u)].filter(Boolean).join('\n');
+  const t=`Hello ${S.brand_name}!\n\nI want to create a custom invitation card.\n\n${B?B+'\n\n':''}Please tell me the estimated price and details.\n\nThank you!`;
+  say('Opening WhatsApp…',1);location.href=wl(t)}
+ if(f.id==='zf'){e.preventDefault();const fd=new FormData(f),o=fd.getAll('o'),tx=(fd.get('t')||'').trim(),bd=(fd.get('b')||'').trim(),d=CARD.d;
+  const idea=[o.length?'Customize: '+o.join(', '):'',tx?'Details: '+tx:''].filter(Boolean).join('\n');
+  say('Opening WhatsApp…',1);
+  await Promise.race([sb.from('enquiries').insert({name:'Not provided',occasion:'Card customization',card_type:d.title,idea:idea||null,budget:bd||null,status:'pending'}),new Promise(r=>setTimeout(r,1500))]);
+  const L=[idea,bd?'Price / Budget: '+bd:''].filter(Boolean).join('\n');
+  location.href=wl(`Hello ${S.brand_name}!\n\nI like this card "${d.title}" and want to customize it.\n\n${L?L+'\n\n':''}Please confirm availability and price.\n\nThank you!`)}});
+window.onhashchange=()=>route();setS();
+let started=false;const go=()=>{if(!started){started=true;route()}};
+sb.from('settings').select('*').eq('id',1).single().then(({data})=>{if(data){S={...data,whatsapp_number:(n=>n.length===10?'91'+n:n)(String(data.whatsapp_number||'').replace(/\D/g,''))||'918828302899'};setS();if(started)route(true);else go()}else go()}).catch(go);
+setTimeout(go,1200);
+</script></body></html>
